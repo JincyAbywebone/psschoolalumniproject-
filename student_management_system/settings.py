@@ -98,7 +98,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',  # Specify MySQL as the database engine
         # 'NAME': 'demolfps',  
         #   'NAME': 'new_littleflower',       # Replace with your database name
-        'NAME': 'panickaveettilssps',
+        'NAME': 'pssps',
         'USER': 'root',         # Replace with your database user
         'PASSWORD': '', # Replace with your database password
         'HOST': 'localhost',         # Replace with your database host (e.g., 'localhost' if it's on the same server)
