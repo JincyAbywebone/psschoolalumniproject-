@@ -284,7 +284,7 @@
                 <!-- Academic Year Badge -->
                 <div class="hidden md:flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-semibold border border-indigo-200/50">
                     <span class="material-symbols-outlined text-sm">event</span>
-                    <span>Session: 2025-2026</span>
+                    <span>Session: {% if current_session %}{{ current_session.start_year }} - {{ current_session.end_year }}{% else %}Nov. 4, 2026 - Nov. 4, 2027{% endif %}</span>
                 </div>
 
                 <!-- Database status -->

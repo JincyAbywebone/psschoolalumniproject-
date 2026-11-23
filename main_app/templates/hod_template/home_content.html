@@ -18,7 +18,7 @@
       <div class="space-y-2">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-indigo-200 text-xs font-semibold backdrop-blur-sm border border-white/10">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Live Academic Session 2025-2026</span>
+          <span>Live Academic Session {% if current_session %}{{ current_session.start_year }} - {{ current_session.end_year }}{% else %}Nov. 4, 2026 - Nov. 4, 2027{% endif %}</span>
         </div>
         <h2 class="text-xl lg:text-2xl font-bold tracking-tight text-white">
           Welcome back, {% if request.user.first_name %}{{ request.user.first_name }} {{ request.user.last_name }}{% else %}{{ request.user.email }}{% endif %}
