@@ -24,4 +24,16 @@ def module_settings_context(request):
     else:
         modulesettings = []
     
-    return {'modulesettings': modulesettings}        
+    return {'modulesettings': modulesettings}
+
+
+def session_context(request):
+    """
+    Adds 'current_session' from the database for all templates.
+    """
+    try:
+        from .models import Session
+        current_session = Session.objects.last()
+        return {'current_session': current_session}
+    except Exception:
+        return {}        

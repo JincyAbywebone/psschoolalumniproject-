@@ -169,6 +169,8 @@ urlpatterns = [
    # alumni
 
 
+     path("fees/dashboard",
+         hod_views.fee_dashboard, name='fee_dashboard'),
      path("fees/fee_settings",
          hod_views.fee_settings, name='fee_settings'),
      path("fees/manage_fee_settings",
